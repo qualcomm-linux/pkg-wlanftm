@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Jing Feng <jinfen@qti.qualcomm.com>
 Build-Depends:
  debhelper-compat (= 13),
+ libglib2.0-dev,
  libnl-3-dev,
  libnl-genl-3-dev
 Standards-Version: 4.6.2
