@@ -2,3 +2,13 @@
 
 %:
 	dh $@
+
+override_dh_auto_install:
+	set -e; \
+	test -d data/ftm/arm64 || { \
+		echo "ERROR: data/ftm/arm64 not found"; \
+		exit 1; \
+	}; \
+
+	mkdir -p debian/ftm debian/ftm; \
+	cp -a data/ftm/arm64/. debian/ftm/
