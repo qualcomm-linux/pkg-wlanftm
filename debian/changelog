@@ -1,3 +1,9 @@
+wlanftm (1.0.0-6~) UNRELEASED; urgency=medium
+
+  * WIP — update changelog before next release
+
+ -- Jing Feng <jinfen@qti.qualcomm.com>  Thu, 05 Nov 2026 08:57:26 +0000
+
 wlanftm (1.0.0-5) resolute; urgency=medium
 
   [ Jing Feng ]
