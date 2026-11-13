@@ -1,16 +1,21 @@
 Source: wlanftm
-Section: utils
-Priority: optional
 Maintainer: Jing Feng <jinfen@qti.qualcomm.com>
+Standards-Version: 4.7.4
+Section: non-free/utils
 Build-Depends:
  debhelper-compat (= 13),
+Build-Depends-Arch:
  libglib2.0-dev,
  libnl-3-dev,
- libnl-genl-3-dev
-Standards-Version: 4.6.2
-Rules-Requires-Root: no
+ libnl-genl-3-dev,
+ qcom-libdiag,
+Vcs-Browser: https://github.com/qualcomm-linux/pkg-wlanftm
+Vcs-Git: https://github.com/qualcomm-linux/pkg-wlanftm.git
 
 Package: wlanftm
 Architecture: arm64
 Description: Qualcomm proprietary ftm WLAN component
  Proprietary prebuilt binary package for ftm.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
