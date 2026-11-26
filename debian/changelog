@@ -1,8 +1,20 @@
 wlanftm (1.0.0-6~) UNRELEASED; urgency=medium
 
-  * WIP — update changelog before next release
+  [ Keerthi Gowda ]
+  * debian/control: add qcom-libdiag to Build-Depends-Arch and switch to
+      ${shlibs:Depends}/${misc:Depends} (fixes missing libdiag.so.1 at
+      runtime)
+  * debian/rules: simplify to minimal overrides (override_dh_auto_install,
+      override_dh_dwz) and let dh_strip/dh_shlibdeps/dh_fixperms run with
+      default debhelper behaviour
+  * debian/source/options: add extend-diff-ignore for .github and
+      .gitignore
+  * debian/gbp.conf: add gbp-buildpackage configuration
+  * debian/source/lintian-overrides: add overrides for prebuilt-binary
+      source package
+  * .gitignore: add root .gitignore for build artifacts
 
- -- Jing Feng <jinfen@qti.qualcomm.com>  Thu, 05 Nov 2026 08:57:26 +0000
+ -- Keerthi Gowda <kbalehal@qti.qualcomm.com>  Fri, 13 Nov 2026 02:13:50 +0000
 
 wlanftm (1.0.0-5) resolute; urgency=medium
 
